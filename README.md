@@ -2,13 +2,13 @@
 
 ## Research projects at UNIMIB - 2022..2023
 The projects mainly involved Fine-grained Entity Typing (FET), an NLP task that aims to identify the specific type of an entity mentioned in a text (e.g., in _"[Barack Obama] won the election in 2008"_, _[Barack Obama]_ can be classified as _person/president_) according to a type hierarchy.
-The project includes a wide number of experiments on benchmark datasets, involving different encoding strategies (i.e., BERT-based fine-tuned with adapters, ELMo, GloVe), prompt-based methods, Neuro-Symbolic Integration, and other state-of-the-art approaches.
+The projects include a wide number of experiments on benchmark datasets, involving different encoding strategies (i.e., BERT-based fine-tuned with adapters, ELMo, GloVe), prompt-based methods, Neuro-Symbolic Integration, and other state-of-the-art approaches.
 
-The experiments have been executed through the [Entity Typing Framework](https://github.com/NooneBug/entity_typing_framework), a framework co-developed with [@NooneBug](https://github.com/NooneBug) based on PyTorch Lightning CLI. The framework is module-oriented and can be easily integrated with new input encoders, neural classifiers, loss functions, inference strategies, loggers, data loaders, and training/validation/test routines. Each implementation of above mentioned components can be combined in several ways by simply defining `config.yaml` files. The metrics and training stats of each run are automatically logged to [wandb.ai](https://wandb.ai/site).
+The experiments have been executed through the [Entity Typing Framework](https://github.com/NooneBug/entity_typing_framework), a framework co-developed with [@NooneBug](https://github.com/NooneBug) based on PyTorch Lightning CLI. The framework is module-oriented and can be easily integrated with new input encoders, neural classifiers, loss functions, inference strategies, loggers, data loaders, and training/validation/test routines. Each implementation of the above mentioned components can be combined in several ways by simply defining `config.yaml` files. The metrics and training stats of each run are automatically logged to [wandb.ai](https://wandb.ai/site).
 
-The most important experiments have been carried out in the following scenarios:
+The most relevant experiments have been carried out in the following scenarios:
 1. [Full-fledged](https://github.com/christianbernasconi96/et_standard_experiments) (milions of training examples available)
-2. Zero/[few-shot class incremental learning](https://github.com/christianbernasconi96/et_specialization_experiments)
+2. Zero/[Few-shot class incremental learning](https://github.com/christianbernasconi96/et_specialization_experiments)
 3. [Few-shot domain adaptation](https://github.com/christianbernasconi96/et_cross_dataset_experiments)
 
 ## "Datalake per Giustizia" - 2022
